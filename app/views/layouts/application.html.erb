@@ -18,7 +18,7 @@
       <div class="collapse navbar-collapse" id="navbarTogglerDemo02">
         <ul class="navbar-nav mr-auto mt-2 mt-md-0">
           <a class="nav-link" href="#">See all Courses</a>
-          <a class="nav-link" href="#">Login</a>
+         
         </ul>
         <ul class="navbar-nav" >
           <% if user_signed_in? %>
@@ -27,7 +27,7 @@
             </li>
           <% else %>
             <li class="nav-item">
-              <%= link_to 'Sign in', new_user_session_path, class: 'nav-link' %>
+              <%= link_to 'Log in', new_user_session_path, class: 'nav-link' %>
             </li>
             <li class="nav-item">
               <%= link_to 'Sign up', new_user_registration_path, class: 'nav-link' %>
