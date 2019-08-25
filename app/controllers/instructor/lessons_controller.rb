@@ -3,8 +3,6 @@ class Instructor::LessonsController < ApplicationController
   before_action :require_authorized_for_current_section
 
   def new
-      return render plain: 'Unauthorized', status: :unauthorized
-    end
     @lesson = Lesson.new
   end
 
@@ -29,3 +27,4 @@ class Instructor::LessonsController < ApplicationController
   def lesson_params
     params.require(:lesson).permit(:title, :subtitle)
   end
+end
