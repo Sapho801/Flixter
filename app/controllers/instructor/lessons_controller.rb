@@ -19,8 +19,6 @@ class Instructor::LessonsController < ApplicationController
 
 
 
-
-
   private
 
   def require_authorized_for_current_lesson
